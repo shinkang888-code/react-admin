@@ -22,8 +22,8 @@ export function TagEditModal({
             'tags',
             { id: tag.id, data, previousData: tag },
             {
-                onSuccess: async tag => {
-                    await onSuccess?.(tag);
+                onSuccess: async (updatedTag: Tag) => {
+                    await onSuccess?.(updatedTag);
                 },
             }
         );

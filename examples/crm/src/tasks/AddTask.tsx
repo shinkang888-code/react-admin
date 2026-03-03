@@ -108,7 +108,7 @@ export const AddTask = ({
                     due_date: new Date().toISOString().slice(0, 10),
                     sales_id: identity.id,
                 }}
-                transform={data => {
+                transform={(data: any) => {
                     const dueDate = new Date(data.due_date);
                     dueDate.setHours(0, 0, 0, 0);
                     data.due_date = dueDate.toISOString();

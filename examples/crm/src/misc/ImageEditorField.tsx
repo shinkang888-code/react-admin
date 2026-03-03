@@ -194,6 +194,7 @@ export interface ImageEditorFieldProps<
     RecordType extends Record<string, any> = Record<string, any>,
 > extends FieldProps<RecordType>,
         AvatarProps {
+    source?: string;
     width?: number;
     height?: number;
     type?: 'avatar' | 'image';

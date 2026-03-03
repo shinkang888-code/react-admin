@@ -130,7 +130,7 @@ const SettingsForm = ({
                     setEditMode(false);
                     notify('Your profile has been updated');
                 },
-                onError: _ => {
+                onError: (_error: unknown) => {
                     notify('An error occurred. Please try again', {
                         type: 'error',
                     });

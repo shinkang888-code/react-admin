@@ -20,7 +20,7 @@ export function TagCreateModal({
             'tags',
             { data },
             {
-                onSuccess: async tag => {
+                onSuccess: async (tag: Tag) => {
                     await onSuccess?.(tag);
                 },
             }

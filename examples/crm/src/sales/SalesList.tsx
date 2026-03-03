@@ -54,7 +54,7 @@ export const SalesList = () => (
                 <DataTable.Col
                     source="last_name"
                     label="Name"
-                    render={record =>
+                    render={(record: any) =>
                         `${record.first_name} ${record.last_name}`
                     }
                 />
